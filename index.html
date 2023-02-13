@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My OWN Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e3f461dde5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="bg-blue-300 mx-auto w-3/4 mt-10 mb-5 shadow-2xl rounded-lg p-10 text-center">
+            <h2 class="font-mono text-4xl font-bold mb-5"> My Text Editor <i
+                    class="fa-sharp fa-regular fa-font-case"></i></h2>
+            <div class="bg-blue-200 border-2 border-black rounded-sm container mx-auto w-4/5 mb-5 p-5">
+                <div class="grid grid-cols-3 gap-4 mb-5">
+                    <div class="flex justify-around">
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="bold"><i
+                                class="fa-sharp fa-solid fa-bold"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="italic"><i
+                                class="fa-sharp fa-solid fa-italic"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="underline"><i
+                                class="fa-sharp fa-solid fa-underline"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="line-through"><i
+                                class="fa-solid fa-strikethrough"></i></button>
+                    </div>
+                    <div class="flex justify-around">
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="left"><i
+                                class="fa-solid fa-align-left"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="center"><i
+                                class="fa-solid fa-align-center"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="right"><i
+                                class="fa-solid fa-align-right"></i></button>
+                        <button class="inline-block py-2 px-4 rounded-md focus:bg-blue-400" id="justifi"><i
+                                class="fa-solid fa-align-justify"></i></button>
+                    </div>
+                    <div class="flex justify-around">
+                        <button class="text-xl font-bold inline-block py-2 px-4 rounded-md focus:bg-blue-400"
+                            id="upprcase">aA</button>
+                        <input class="w-12" type="number" id="font-size" min="11" max="36" value="16">
+                        <input type="color" class="w-12" id="color">
+                    </div>
+                </div>
+                <hr class="border-black mb-5 w-full mx-auto border-2">
+                <div class="w-full mx-auto">
+                    <textarea id="editor-filed" class="w-full h-96 p-4 border-2 border-black"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
